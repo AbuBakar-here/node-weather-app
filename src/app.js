@@ -3,8 +3,9 @@ const path = require('path')
 const geoCode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 const hbs = require('hbs')
+
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 // Apis
 const wapi = 'e869caf05c3731c13ea76d2dc301e642'

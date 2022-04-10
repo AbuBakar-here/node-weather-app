@@ -1,7 +1,7 @@
 const getweather = (location) => {
     messageOne.textContent = "Loading..."
     messageTwo.innerHTML = ""
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
 
         response.json().then(({ error, location, forecastData } = {}) => {
 
